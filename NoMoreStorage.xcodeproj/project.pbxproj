@@ -196,14 +196,18 @@
 				TargetAttributes = {
 					F6B5F3DE1D4F818B00142BF7 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 7UGU2CH934;
+						DevelopmentTeam = LEUH4N764L;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
 					};
 					F6B5F3F21D4F818B00142BF7 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = F6B5F3DE1D4F818B00142BF7;
 					};
 					F6B5F3FD1D4F818B00142BF7 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = F6B5F3DE1D4F818B00142BF7;
 					};
 				};
@@ -407,11 +411,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Lukas Boehler (UDDQUTTHQ9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = LEUH4N764L;
 				INFOPLIST_FILE = NoMoreStorage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = at.nomorespace.cool;
+				PRODUCT_BUNDLE_IDENTIFIER = at.nomorespace.cool.lintao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3def8378-90ac-4058-b57b-68a48daa00a2";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -420,11 +429,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Lukas Boehler (UDDQUTTHQ9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = LEUH4N764L;
 				INFOPLIST_FILE = NoMoreStorage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = at.nomorespace.cool;
+				PRODUCT_BUNDLE_IDENTIFIER = at.nomorespace.cool.lintao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3def8378-90ac-4058-b57b-68a48daa00a2";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -436,6 +450,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = at.appwerkstatt.net.NoMoreStorageTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoMoreStorage.app/NoMoreStorage";
 			};
 			name = Debug;
@@ -448,6 +463,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = at.appwerkstatt.net.NoMoreStorageTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoMoreStorage.app/NoMoreStorage";
 			};
 			name = Release;
@@ -459,6 +475,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = at.appwerkstatt.net.NoMoreStorageUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = NoMoreStorage;
 			};
 			name = Debug;
@@ -470,6 +487,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = at.appwerkstatt.net.NoMoreStorageUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = NoMoreStorage;
 			};
 			name = Release;
