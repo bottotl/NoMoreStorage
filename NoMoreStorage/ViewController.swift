@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
     @IBOutlet weak var freeStorageLabel: UILabel!
@@ -74,6 +75,17 @@ class ViewController: UIViewController {
                 if let path = Bundle.main.path(forResource: "alotof", ofType:"shit") {
                     do {
                         try fileMgr.copyItem(atPath: path, toPath: destPath)
+                        if fileMgr.fileExists(atPath: destPath) {
+                            if let fileHandle = FileHandle.init(forWritingAtPath: destPath) {
+                                fileHandle.seekToEndOfFile()
+                                fileHandle.write(destPath.data(using: String.Encoding.unicode)!)
+                                fileHandle.closeFile()
+                            } else {
+                                print("Can't open fileHandle")
+                            }
+                        } else {
+                            
+                        }
                     } catch _ {
                         
                     }
